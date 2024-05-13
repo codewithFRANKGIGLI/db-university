@@ -9,4 +9,5 @@
 
 4. Contare quanti corsi di laurea ci sono per ogni dipartimento
 4. SELECT `department_id`, COUNT(*) AS num_corsi_laurea FROM degrees GROUP BY `department_id`;
-    SELECT `department_id`, COUNT(*) AS num_corsi_laurea, dip.name FROM degrees JOIN departments AS dip ON degrees.department_id = dip.id GROUP BY `department_id`; prendendo la colonna name per avere il nome del dipartimento
+    SELECT `department_id`, COUNT(*) AS num_corsi_laurea, dip.name FROM degrees JOIN departments AS dip ON degrees.department_id = dip.id GROUP BY `department_id`; 
+    prendendo la colonna name per avere il nome del dipartimento
